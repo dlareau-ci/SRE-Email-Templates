@@ -15,7 +15,6 @@ Within index.html, you will see a place to copy in the header code.  The standar
 <!--	    ADD ADDITIONAL CONTENT ROWS ABOVE		-->
 <!-- =============================================== -->
 
-
 All of the content modules are set up as table rows beginning and ending with <tr> tags.  Some content modules also have CSS that will need to be pasted into the head of the document, this can also include CSS that will need to be added to the media queries.
 
 Any images that are used in the templates will need to have the image paths updated to reflect new images that are used for each email or campaign.
