@@ -113,24 +113,20 @@ div[style*="Margin: 16px 0"] {
     -ms-text-size-adjust: 100%;
     color: #e3e2e2;
 }
-.webkit-header {
-    max-width: 640px;
-    Margin: 0 auto;
-}
 .webkit {
-    max-width: 640px;
+    max-width: 600px;
     Margin: 0 auto;
 }
 /*table styles */
 .header-outer {
     Margin: 0 auto;
     width: 100%;
-    max-width: 640px;
+    max-width: 600px;
 }
 .outer {
     Margin: 0 auto;
-    width: 93.75%;
-    max-width: 640px;
+    width: 100%;
+    max-width: 600px;
 }
 .inner {
     padding: 30px;
@@ -172,12 +168,6 @@ div[style*="Margin: 16px 0"] {
     max-width: 600px;
 }
 /*img styles */
-.full-width-header-image img {
-    width: 93.75%;
-    max-width: 640px;
-    height: auto;
-    margin: 0 auto;
-}
 .full-width-image img {
     width: 100%;
     max-width: 600px;
@@ -228,7 +218,7 @@ a {
 	text-decoration: none !important;
 }
 .button-link {
-	font-size: 20px;
+	font-size: 18px;
 	font-weight:bold;
 	line-height:26px;
 	font-family: Arial, Helvetica, sans-serif;
@@ -302,7 +292,7 @@ a {
 @media screen and (max-width: 480px) {
     .logo {
         width: 75% !important;
-        max-width: 270px !important;
+        max-width: 232px !important;
     }
     .inner {
         padding: 20px !important;
@@ -321,13 +311,47 @@ a {
 </div>
 
 <center class="wrapper">
-<!-- =============================================== -->
-<!--		  	PASTE HEADER CODE BELOW				 -->
-<!-- =============================================== -->
-
+<!-- ************ HEADER START ************ -->
+<table class="body-content" cellpadding="0" cellspacing="0" border="0" align="center">
+    <!-- REMOVE FROM FINAL FILES -->
+    <tr>
+    	<td class="sl-options" align="center">
+    		<p>
+				<strong>SL:</strong> Subject line copy goes here.<br/>
+				<strong>SL:</strong> Subject line copy goes here.
+			</p>
+            <p><strong>Preview Copy:</strong> Preview copy goes here.</p>
+            <p class="note">This section is for proofing/routing only and will be removed for final files.</p>
+    	</td>
+    </tr>
+    <!-- end REMOVE FROM FINAL FILES -->
+    <tr>
+      <td class="grey-bkg">
+            <div class="webkit"><!-- FOR OLD WEBKIT ENGINES (APPLE MAIL 6 AND BELOW) -->
+<!--THE TABLE BELOW CREATES A 600PX CONTAINER FOR OUTLOOK (OUTLOOK IGNORES MAX-WIDTH) -->
+  <!--[if (gte mso 9)|(IE)]>
+<table width="600" align="center" cellpadding="0" cellspacing="0" border="0" bgcolor="#f0f0f0">
+<tr>
+<td>
+<![endif]-->
+<table class="header-outer" align="center" bgcolor="#f0f0f0" width="100%"><!-- KEY BUILDING BLOCK FOR EVERY CLIENT EXCEPT OUTLOOOK -->
+  <tr>
+      <td class="full-width-image"><a href="#"><img src="http://images.compassion.com/images/sre/master-templates/header-option-2/header-option-2.jpg" width="600" alt="Happy Birthday" /></a></td>
+  </tr>
+</table>
+<!-- end class=outer-->
+<!--[if (gte mso 9)|(IE)]>
+</td>
+</tr>
+</table>
+<![endif]-->
+        </div>
+    </td>
+  </tr>
+</table>
 <!-- ************ HEADER END ************ -->
 <!-- ************BODY CONTENT START************ -->
- <table class="body-content">
+<table class="body-content">
     <tr>
       <td class="grey-bkg">
             <div class="webkit"><!-- FOR OLD WEBKIT ENGINES (APPLE MAIL 6 AND BELOW) -->
@@ -349,11 +373,11 @@ Donec convallis lobortis malesuada. Fusce lacinia est sit amet volutpat posuere.
 Nulla facilisi. Nam felis justo, ornare sit amet sapien ut, porta dignissim lorem. Donec aliquam massa eu nulla maximus scelerisque. Donec ut tincidunt felis, quis suscipit purus.</p></td>
           </tr>
           <!-- =============================================== -->
-          <!--			ADD ADDITIONAL CONTENT ROWS BELOW       -->
+          <!--			ADD ADDITIONAL CONENT ROWS BELOW       -->
           <!-- =============================================== -->
 		  
           <!-- =============================================== -->
-          <!--			ADD ADDITIONAL CONTENT ROWS ABOVE       -->
+          <!--			ADD ADDITIONAL CONENT ROWS ABOVE       -->
           <!-- =============================================== -->
 		  <!--[if (gte mso 9)|(IE)]>
              <tr>
@@ -379,7 +403,7 @@ Nulla facilisi. Nam felis justo, ornare sit amet sapien ut, porta dignissim lore
 <table class="body-content">
     <tr>
       <td class="grey-bkg">
-            <div class="webkit-header"><!-- FOR OLD WEBKIT ENGINES (APPLE MAIL 6 AND BELOW) -->
+            <div class="webkit"><!-- FOR OLD WEBKIT ENGINES (APPLE MAIL 6 AND BELOW) -->
 <!--THE TABLE BELOW CREATES A 600PX CONTAINER FOR OUTLOOK (OUTLOOK IGNORES MAX-WIDTH) -->
   <!--[if (gte mso 9)|(IE)]>
 <table width="600" align="center" cellpadding="0" cellspacing="0" border="0" bgcolor="#e3e2e2">
