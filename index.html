@@ -130,11 +130,11 @@ div[style*="Margin: 16px 0"] {
     width: 100%;
     max-width: 640px;
 }
-.outer {
+/*.outer {
     Margin: 0 auto;
     width: 93.75%;
     max-width: 640px;
-}
+}*/
 .inner {
     padding: 30px;
 }
@@ -310,6 +310,10 @@ a {
     .inner {
         padding: 20px !important;
     }
+	/* Targets Gmail on iOS */
+	u ~ div {min-width: 100vw !important;}
+    /* Targets Gmail on Android */
+    div > u ~ div {min-width: 100% !important;}
 }
 </style>    
 
@@ -320,7 +324,7 @@ a {
 <div style="display: none; font-size: 1px; color: #fefefe; line-height: 1px; font-family: Arial, Helvetica, sans-serif; max-height: 0px; max-width: 0px; opacity: 0; overflow: hidden;">Insert preview copy here.</div>
 <!-- Insert &zwnj;&nbsp; hack after hidden preview text -->
 <div style="display: none; max-height: 0px; overflow: hidden;">
-&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;
+&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;
 </div>
 
 <center class="wrapper">
@@ -336,11 +340,11 @@ a {
             <div class="webkit"><!-- FOR OLD WEBKIT ENGINES (APPLE MAIL 6 AND BELOW) -->
 <!--THE TABLE BELOW CREATES A 600PX CONTAINER FOR OUTLOOK (OUTLOOK IGNORES MAX-WIDTH) -->
   <!--[if (gte mso 9)|(IE)]>
-<table width="600" align="center" cellpadding="0" cellspacing="0" border="0" bgcolor="#FFFFFF">
+<table width="640" align="center" cellpadding="0" cellspacing="0" border="0" bgcolor="#e3e2e2" style="width:640px;">
 <tr>
 <td>
 <![endif]-->
-<table class="outer" align="center" bgcolor="#FFFFFF" width="100%"><!-- KEY BUILDING BLOCK FOR EVERY CLIENT EXCEPT OUTLOOOK -->
+<table class="outer" align="center" bgcolor="#FFFFFF" width="100%" style="width:93.75%; max-width: 600px; Margin:0 auto;"><!-- KEY BUILDING BLOCK FOR EVERY CLIENT EXCEPT OUTLOOOK -->
   <tr><!-- CONTENT ROW -->
     <td class="one-column">
       <table width="100%">
@@ -358,12 +362,7 @@ Nulla facilisi. Nam felis justo, ornare sit amet sapien ut, porta dignissim lore
           <!-- =============================================== -->
           <!--			ADD ADDITIONAL CONTENT ROWS ABOVE       -->
           <!-- =============================================== -->
-		  <!--[if (gte mso 9)|(IE)]>
-             <tr>
-            	<td style="line-height:0px; font-size:0px;"><img src="http://images.compassion.com/images/sre/master-templates/footer/spacer2.gif" width="598"></td>
-          	</tr>
-          <![endif]-->
-      </table>
+		</table>
     </td>
   </tr>
   <!-- END CONTENT ROW -->
@@ -385,16 +384,19 @@ Nulla facilisi. Nam felis justo, ornare sit amet sapien ut, porta dignissim lore
             <div class="webkit-header"><!-- FOR OLD WEBKIT ENGINES (APPLE MAIL 6 AND BELOW) -->
 <!--THE TABLE BELOW CREATES A 600PX CONTAINER FOR OUTLOOK (OUTLOOK IGNORES MAX-WIDTH) -->
   <!--[if (gte mso 9)|(IE)]>
-<table width="600" align="center" cellpadding="0" cellspacing="0" border="0" bgcolor="#e3e2e2">
+<table width="640" align="center" cellpadding="0" cellspacing="0" border="0" bgcolor="#e3e2e2" style="width:640px;">
 <tr>
 <td>
 <![endif]-->
-<table class="outer" align="center" bgcolor="#e3e2e2" width="100%">
+<table class="outer" align="center" bgcolor="#e3e2e2" width="100%" style="width:93.75%; max-width: 600px; Margin:0 auto;">
   <tr><!-- CONTENT ROW -->
     <td class="one-column">
       <table width="100%">
         <tr>
-          <td height="40" align="center" style="padding-top:40px; padding-bottom:40px;"><a href="http://www.youtube.com/user/CompassionIntl" target="_blank" style="text-decoration:none;"><img src="http://images.compassion.com/images/sre/master-templates/footer/youtube.png" class="footer-icon" alt="YouTube" style="font-size:10px; font-family:arial,helvetica,sans-serif;" width="52" height="38" border="0" /></a><img src="http://images.compassion.com/images/sre/master-templates/footer/spacer.gif" width="20" height="20" class="footer-icon" alt="" /><a href="http://www.facebook.com/compassionintl" target="_blank" style="text-decoration:none;"><img src="http://images.compassion.com/images/sre/master-templates/footer/facebook.png" class="footer-icon" alt="Facebook" width="38" height="38" style="font-size:10px; font-family:arial,helvetica,sans-serif;" border="0"/></a><img src="http://images.compassion.com/images/sre/master-templates/footer/spacer.gif" width="20" height="20" class="footer-icon" alt="" /><a href="http://twitter.com/compassion" target="_blank" style="text-decoration:none;"><img src="http://images.compassion.com/images/sre/master-templates/footer/twitter.png" class="footer-icon" width="44" height="38" alt="Twitter"  style="font-size:10px; font-family:arial,helvetica,sans-serif;" border="0"/></a><img src="http://images.compassion.com/images/sre/master-templates/footer/spacer.gif" width="20" height="20"  class="footer-icon" alt="" /><a href="http://pinterest.com/compassion/" target="_blank" style="text-decoration:none;"><img src="http://images.compassion.com/images/sre/master-templates/footer/pinterest.gif" alt="Pinterest" width="38" height="38" class="footer-icon" style="font-size:10px; font-family:arial,helvetica,sans-serif;" border="0" /></a><img src="http://images.compassion.com/images/sre/master-templates/footer/spacer.gif" width="20" height="20" class="footer-icon" alt="" /><a href="http://instagram.com/compassion" target="_blank" style="text-decoration:none;"><img src="http://images.compassion.com/images/sre/master-templates/footer/instagram.gif" alt="Instagram" width="38" height="38" class="footer-icon" style="font-size:10px; font-family:arial,helvetica,sans-serif;" border="0"/></a></td>
+			<td height="40" align="center" style="padding-top:30px; padding-bottom:15px;"><a href="https://store.compassion.com" target="_blank" style="text-decoration:none;"><img src="http://images.compassion.com/images/sre/master-templates/footer/compassion-store.gif" alt="Compassion Store" style="font-size:10px; font-family:arial,helvetica,sans-serif; margin:0 auto;" width="212" border="0" /></a></td>
+		</tr>
+        <tr>
+          <td height="40" align="center" style="padding-top:15px; padding-bottom:40px;"><a href="http://www.youtube.com/user/CompassionIntl" target="_blank" style="text-decoration:none;"><img src="http://images.compassion.com/images/sre/master-templates/footer/youtube.png" class="footer-icon" alt="YouTube" style="font-size:10px; font-family:arial,helvetica,sans-serif;" width="54" height="38" border="0" /></a><img src="http://images.compassion.com/images/sre/master-templates/footer/spacer.gif" width="20" height="20" class="footer-icon" alt="" /><a href="http://www.facebook.com/compassionintl" target="_blank" style="text-decoration:none;"><img src="http://images.compassion.com/images/sre/master-templates/footer/facebook.png" class="footer-icon" alt="Facebook" width="38" height="38" style="font-size:10px; font-family:arial,helvetica,sans-serif;" border="0"/></a><img src="http://images.compassion.com/images/sre/master-templates/footer/spacer.gif" width="20" height="20" class="footer-icon" alt="" /><a href="http://twitter.com/compassion" target="_blank" style="text-decoration:none;"><img src="http://images.compassion.com/images/sre/master-templates/footer/twitter.png" class="footer-icon" width="44" height="38" alt="Twitter"  style="font-size:10px; font-family:arial,helvetica,sans-serif;" border="0"/></a><img src="http://images.compassion.com/images/sre/master-templates/footer/spacer.gif" width="20" height="20"  class="footer-icon" alt="" /><a href="http://instagram.com/compassion" target="_blank" style="text-decoration:none;"><img src="http://images.compassion.com/images/sre/master-templates/footer/instagram.gif" alt="Instagram" width="38" height="38" class="footer-icon" style="font-size:10px; font-family:arial,helvetica,sans-serif;" border="0"/></a></td>
         </tr>
         <tr>
             <td class="footer-contents"><a href="%%view_email_url%%" target="_blank" style="color:#0054A6;" alias="view_in_browser">View this message in your browser.</a><br/>
